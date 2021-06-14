@@ -9,7 +9,7 @@ apply from: '../shared_dependencies.gradle'
 
 def versionMajor = 0
 def versionMinor = 0
-def versionPatch = 1
+def versionPatch = 2
 
 def packageName = "com.dicoding.whatsnewmovie"
 def appName = "Whats Movie"
