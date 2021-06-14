@@ -6,7 +6,6 @@ apply plugin: 'kotlin-parcelize'
 
 apply from: '../shared_dependencies.gradle'
 
-def appName = "Whats Movie"
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -39,7 +38,6 @@ android {
     flavorDimensions "mode"
     productFlavors {
         dev {
-            resValue "string", "app_alias_name", appName
             dimension "mode"
             buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/\""
         }
@@ -52,7 +50,7 @@ dependencies {
     implementation project(":app")
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.5.0'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation 'androidx.annotation:annotation:1.2.0'
