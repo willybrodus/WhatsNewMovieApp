@@ -97,7 +97,7 @@ public class ImageRoundCorners extends androidx.appcompat.widget.AppCompatImageV
 
     /*
     * Testing for this yeah. So it's a good think
-    * Add the commit for second
+    * Add the commit for third
     * */
     private boolean isRounded(int corner) {
         return (roundedCorners & corner) == corner;
